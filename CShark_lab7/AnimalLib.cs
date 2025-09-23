@@ -6,22 +6,22 @@
         public string Comment { get; set; }
 
     }
+    public enum eClassificationAnimal
+    {
+        Herbivores,
+        Carnivores,
+        Omnivores
+    }
+    public enum eFavouriteFood
+    {
+        Meat,
+        Plants,
+        Everything
+    }
 
     [AnimalAttribute("This is an Animal")]
     public abstract class Animal
     {
-        public enum eClassificationAnimal
-        {
-            Herbivores,
-            Carnivores,
-            Omnivores
-        }
-        public enum eFavouriteFood
-        {
-            Meat,
-            Plants,
-            Everything
-        }
         public string Country { get; set; }
         public string Name { get; set; }
         public string HideFromOtherAnimals { get; set; }

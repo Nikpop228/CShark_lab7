@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36401.2 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CShark_lab7", "CShark_lab7\CShark_lab7.csproj", "{34B0E7D7-BB36-4EE0-9D7A-1391D989B139}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XML_creating", "XML_creating\XML_creating.csproj", "{A221AF4E-2E44-43B6-BF74-BD4E92C64A61}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{34B0E7D7-BB36-4EE0-9D7A-1391D989B139}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34B0E7D7-BB36-4EE0-9D7A-1391D989B139}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34B0E7D7-BB36-4EE0-9D7A-1391D989B139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A221AF4E-2E44-43B6-BF74-BD4E92C64A61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A221AF4E-2E44-43B6-BF74-BD4E92C64A61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A221AF4E-2E44-43B6-BF74-BD4E92C64A61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A221AF4E-2E44-43B6-BF74-BD4E92C64A61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
