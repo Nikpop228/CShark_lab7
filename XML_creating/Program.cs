@@ -41,10 +41,10 @@ class Program
         var methods = new XElement("Methods"); // элемент для методов
         var fieldss = new XElement("Fields");
 
-        foreach (var prop in properties_list) { properties.Add(new XElement(prop.Name)); } // добавляем св-ва
-        foreach(var meth in methods_list) { if (!meth.Name.Contains("get_") & !meth.Name.Contains("set_")) { methods.Add(new XElement(meth.Name)); } } // добавляем методы, условие для фильтрации методов отн. к св-вам
-        foreach(var constr in constructors_list) { methods.Add(new XElement(type.Name)); } // добавляем конструкторы - используем type.Name - иначе ошибка
-        foreach(var f in fields_list) { if (!f.Name.Contains("k__BackingField")) { fieldss.Add(new XElement(f.Name)); } }
+        foreach (var prop in properties_list) { properties.Add(new XElement("Property", prop.Name)); } // добавляем св-ва
+        foreach(var meth in methods_list) { if (!meth.Name.Contains("get_") & !meth.Name.Contains("set_")) { methods.Add(new XElement("Method", meth.Name)); } } // добавляем методы, условие для фильтрации методов отн. к св-вам
+        foreach(var constr in constructors_list) { methods.Add(new XElement("Constructor", type.Name)); } // добавляем конструкторы - используем type.Name - иначе ошибка
+        foreach(var f in fields_list) { if (!f.Name.Contains("k__BackingField")) { fieldss.Add(new XElement("Field", f.Name)); } }
 
         foreach (AnimalAttribute a in attributes_list) kernel.Add(new XElement("Comment", a.Comment));
         kernel.Add(fieldss);
