@@ -26,6 +26,7 @@
         public string Name { get; set; }
         public string HideFromOtherAnimals { get; set; }
         public string WhatAnimal { get; set; }
+        private eClassificationAnimal Classification;
         public Animal(string country, string name, string hidefromother, string whatanimal) 
         {
             (Country, Name, HideFromOtherAnimals, WhatAnimal) = (country, name, hidefromother, whatanimal);
